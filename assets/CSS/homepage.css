@@ -8,7 +8,7 @@ body {
 
 body::before {
 	content: "";
-	background-image: url(./assets/images/spider-man-background.jpg);
+	background-image: url("/assets/images/spider-man-background.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -59,6 +59,12 @@ body::before {
 	object-fit: cover;
 	position: absolute;
 	opacity: 1;
+	transition: opacity .3s ease-in-out;
+}
+
+.s-card--hovered .s-card__background {
+	cursor: pointer;
+	opacity: 0.5;;
 }
 
 .s-card__image{
@@ -66,6 +72,13 @@ body::before {
 	height: 100%;
 	object-fit: contain;
 	position: relative;
+	transition: .3s ease-in-out;
+	z-index: 1;
+}
+
+.s-card--hovered .s-card__image {
+	transform: scale(1.3);
+	z-index: 2;
 }
 
 .s-card__title {
