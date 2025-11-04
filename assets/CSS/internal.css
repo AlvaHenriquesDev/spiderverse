@@ -1,21 +1,48 @@
-@import url(/assets/CSS/reset.css);
+@import url("./reset.css");
+@import url("./global.css");
+@import url("./navigator.css");
 
 .s-wrapper {
-    display: flex;
-    height: 100vh;
-    flex-flow: row nowrap;
+	display: flex;
+	height: 100vh;
+	flex-flow: row nowrap;
+	background-color: aqua;
 }
 
 .s-wrapper .s-left-column {
-    width: 100px;
-    height: 100%;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	width: 100px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1;
 }
-.s-wrapper .s-main-content{
-    height: 100%;
-    width: 100%;
-    background-color: #808080;
+
+.s-wrapper .s-main-content {
+	height: 100vh;
+	width: 100vw;
+	background-color: #808080;
+	padding-left: 130px;
+}
+
+.s-wrapper .s-main-content__top{
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.s-wrapper .s-main-content__top .s-logo img {
+	margin: 10px 30px 30px ;
+}
+
+.s-wrapper .s-main-content__bottom{
+	height: 20vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 }

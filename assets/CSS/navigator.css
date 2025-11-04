@@ -1,0 +1,55 @@
+@import url("reset.css");
+@import url("global.css");
+
+
+.navigator {
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	position: relative;
+}
+
+.navigator::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 2px;
+	height: 100%;
+	z-index: -1;
+    background-color: #fff;
+}
+
+.navigator ul li{
+	margin: 60px 0;
+	padding: .6rem;
+	border: 3px solid #fff;
+    background-color: #000;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: .3s ease-in-out;
+    z-index: 1;
+}
+
+.navigator ul li:hover{
+	background-color: #fff;
+}
+
+.navigator ul li:hover a{
+	color: #000;
+}
+
+.navigator__icon {
+	position: absolute;
+	top: -20px;
+}
+
+
+.navigator ul li:first-child{
+	margin-top: 0;
+}
+
+.navigator ul li:last-child{
+	margin-bottom: 0;
+}
