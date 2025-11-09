@@ -52,6 +52,10 @@ body[id*="spider-man-"] .s-card:not(.s-card--hovered) {
 	margin: 0 1.25rem;
 }
 
+.s-menu__item:hover {
+	text-decoration: underline;
+}
+
 .s-menu__icon {
 	width: 40px;
 	text-align: center;
